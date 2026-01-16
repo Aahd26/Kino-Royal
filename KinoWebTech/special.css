@@ -1,0 +1,262 @@
+.top-black {
+    background-color: black;
+    height: 50px; 
+    width: 100%;
+}
+  
+  
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    background: linear-gradient(to top, #050505, #222222);
+}
+  
+  
+.logo {
+    height: 100px;
+    width: 250px;
+}
+  
+  
+.nav-elemente ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-elemente ul li {
+    margin: 0 15px;
+}
+  
+.nav-elemente ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+  
+.nav-elemente ul li a:hover {
+    text-decoration: underline;
+}
+button {
+    background-color: #E02200; 
+    color: #fff; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 100px;
+  }
+  
+  button:hover {
+    background-color: #D13400; 
+    transform: scale(1.05); 
+  }
+  
+  button:active {
+    background-color: #D13400; 
+    transform: scale(0.98); 
+  }
+  
+.footer-teil {
+    background-color: black; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box;
+    border-top: 5px solid red;
+}
+  
+.footer-elemente ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+.footer-elemente ul li{
+    margin: 0 80px;
+}
+  
+.footer-elemente a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+  
+.footer-elemente a:hover{
+    text-decoration: underline;
+}
+  
+footer{
+    margin-top: auto;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-Dyslexic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212; 
+    color: #ddd; 
+}
+
+.events{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    flex-direction: column;
+    background-color:black;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.erstes-event{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction:column; 
+    justify-content: center; 
+    padding: 20px;
+}
+.zweites-event{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.drittes-event{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+  
+
+.image {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px; 
+}
+
+
+  .konto {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+  }
+  
+  .konto-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+  }
+  
+  .konto-dropdown li {
+    padding: 10px;
+  }
+  
+  .konto-dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .konto:hover .konto-dropdown {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .konto-dropdown li:hover {
+    background-color: #555;
+  }
+  
+  
+  .konto a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #444;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .konto a:hover {
+    background-color: #555;
+  }
+  
+  .logged-in{
+    font-size: x-large;
+    font-family: cursive;
+    text-decoration: underline;
+  }
+  @media (max-width: 992px) {
+    .nav-bar {
+      padding: 10px 15px;
+    }
+  
+    .nav-elemente ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-elemente ul li {
+      margin: 10px 0;
+    }
+  
+    .logo {
+      height: 80px;
+      width: 200px;
+    }
+  
+
+    .events {
+        padding: 15px;
+    }
+
+    .erstes-event, .zweites-event, .drittes-event {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .image {
+        width: 50vw;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+}

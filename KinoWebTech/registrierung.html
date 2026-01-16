@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+  <link rel="stylesheet" href="registrierung.css">
+  <title>Kino Royal</title>
+</head>
+<body>
+
+    <div class="top-black"></div>
+    <div class="nav-bar">
+      <a href="index.html"><img src="KinoBilder/LOGO3-modified.png" alt="Kino Royal in roten Buchstaben." class="logo"></a>
+      <nav class="nav-elemente">
+        <ul>
+          <li><a href="index.html">PROGRAMM</a></li>
+          <li><a href="preview.html">PREVIEW</a></li>
+          <li><a href="special.html">SPECIAL</a></li>
+        </ul>
+      </nav>
+      <div class="konto">
+        <a href="#">KONTO</a>
+        <ul class="konto-dropdown">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registrierung.html">Registrieren</a></li>
+        </ul>
+      </div>
+  
+      <div class="logged-in" id="logged-in" style="display:none;">
+        <span id="user-name">Logged in as </span>
+      </div>
+    </div>
+  
+  
+  
+    
+    <div class="registrierung-container">
+      <h1>Registrierung</h1>
+      <form action="registrierung.php" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+              <label for="vorname">Vorname</label>
+              <input type="text" name="vorname" id="vorname" placeholder="Ihren Vornamen eingeben">
+              <span class="error">* </span>
+          </div>
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Ihren Namen eingeben">
+              <span class="error">* </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Ihr Email eingeben">
+          <span class="error">* </span>
+        </div>
+        <div class="form-group">
+          <label for="password">Passwort</label>
+          <input type="password" name="password" id="password" placeholder="Ihr Passwort eingeben">
+          <span class="error">* </span>
+        </div>
+          <button type="submit" class="registrieren-btn">REGESTRIEREN</button>
+        <span class="error">* Benötigte Felder</span>
+      </form>
+   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+    <footer>   
+      <div class="footer-teil">
+        <nav class="footer-elemente">
+          <ul>
+            <li><a href="datenschutz.html">DATENSCHUTZ</a></li>
+            <li><a href="impressum.html">IMPRESSUM</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  
+  <script src="registrierung.js"></script>
+  
+  
+  
+    
+  </body>
+  </html>
+  

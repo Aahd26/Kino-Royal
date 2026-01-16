@@ -1,0 +1,344 @@
+.top-black {
+    background-color: black;
+    height: 50px; 
+    width: 100%;
+  }
+  
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    background: linear-gradient(to top, #050505, #222222);
+  }
+  
+  
+  .logo {
+    height: 100px;
+    width: 250px;
+  }
+  
+  
+  .nav-elemente ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-elemente ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-elemente ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .nav-elemente ul li a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+  .footer-teil {
+    background-color: black; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box;
+    border-top: 5px solid red;
+  }
+  
+  .footer-elemente ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-elemente ul li{
+    margin: 0 80px;
+  }
+  
+  .footer-elemente a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .footer-elemente a:hover{
+    text-decoration: underline;
+  }
+  
+  footer{
+    margin-top: auto;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-Dyslexic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000000; 
+    color: #ddd; 
+  }
+  
+  .coming {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .erster-film{
+    align-items: center;
+    position: relative;
+    width: 50%;
+  }
+  .zweiter-film{
+    align-items: center;
+    position: relative;
+    width: 50%;
+  }
+
+  .dritter-film{
+    align-items: center;
+    position: relative;
+    width: 50%;
+  }
+
+  .image {
+    display: block;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px; 
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(35, 34, 34);
+    border-radius: 10px; 
+  }
+  
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(35, 34, 34);
+    border-radius: 10px; 
+  }
+  
+  .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(35, 34, 34);
+    border-radius: 10px; 
+  }
+  .erster-film:hover .overlay1 {
+    opacity: 0.9;
+  }
+  
+  .zweiter-film:hover .overlay2 {
+    opacity: 0.9;
+  }
+
+  .dritter-film:hover .overlay3 {
+    opacity: 0.9;
+  }
+  
+  .description {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .description h1{
+    font-size: 20px;
+    color: white;
+    
+  }
+
+.trailer{
+  position: relative;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.vorschau{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay4 {
+  position: absolute;
+  width: 50%;
+  height:100%;
+  background-color: rgb(35, 34, 34, .9);
+}
+.background{
+  height: 50%;
+  width: 50%;
+}
+  
+
+  
+  
+  
+ 
+  
+ 
+  .konto {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+  }
+  
+  .konto-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+  }
+  
+  .konto-dropdown li {
+    padding: 10px;
+  }
+  
+  .konto-dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .konto:hover .konto-dropdown {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .konto-dropdown li:hover {
+    background-color: #555;
+  }
+  
+ 
+  .konto a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #444;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .konto a:hover {
+    background-color: #555;
+  }
+  
+  .logged-in{
+    font-size: x-large;
+    font-family: cursive;
+    text-decoration: underline;
+  }
+ 
+@media (max-width: 992px) {
+
+    .nav-bar {
+      padding: 10px 15px;
+    }
+  
+    .nav-elemente ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-elemente ul li {
+      margin: 10px 0;
+    }
+  
+    .logo {
+      height: 80px;
+      width: 200px;
+    }
+  .coming {
+    flex-direction: column;
+    margin: 50px 20px;
+    align-items: center;
+  }
+
+  .erster-film, .zweiter-film, .dritter-film {
+    width: 45%;
+  }
+
+  .footer-elemente ul li {
+    margin: 0 30px;
+  }
+  .trailer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+
+  .overlay4 {
+    width: 70%;
+  }
+
+  .background {
+    width: 70%;
+  }
+}

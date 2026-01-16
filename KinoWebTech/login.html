@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <title>Kino Royal</title>
+</head>
+<body>
+  <div class="top-black"></div>
+  <div class="nav-bar">
+    <a href="index.html"><img src="KinoBilder/LOGO3-modified.png" alt="Kino Royal in roten Buchstaben." class="logo"></a>
+    <nav class="nav-elemente">
+      <ul>
+        <li><a href="index.html">PROGRAMM</a></li>
+        <li><a href="preview.html">PREVIEW</a></li>
+        <li><a href="special.html">SPECIAL</a></li>
+      </ul>
+    </nav>
+    <div class="konto">
+      <a href="#">KONTO</a>
+      <ul class="konto-dropdown">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="registrierung.html">Registrieren</a></li>
+      </ul>
+    </div>
+
+    <div class="logged-in" id="logged-in" style="display:none;">
+      <span id="user-name">Logged in as </span>
+    </div>
+  </div>
+
+ 
+
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="login.php" method="POST">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Ihre Email-Adresse eingeben.">
+            
+        </div>
+        <div class="form-group">
+            <label for="password">Passwort</label>
+            <input type="password" name="password" id="password" placeholder="Ihr Passwort eingeben">
+          
+        </div>
+        <button type="submit" class="login-btn">LOGIN</button>
+    </form>
+    <div class="register">
+        <p>Sie haben noch keinen Account? <a href="registrierung.php">Regestrierung</a></p>
+    </div>
+ </div>
+
+ <footer>   
+  <div class="footer-teil">
+    <nav class="footer-elemente">
+      <ul>
+        <li><a href="datenschutz.html">DATENSCHUTZ</a></li>
+        <li><a href="impressum.html">IMPRESSUM</a></li>
+      </ul>
+    </nav>
+  </div>
+ </footer>
+
+
+
+
+
+
+</body>
+</html>

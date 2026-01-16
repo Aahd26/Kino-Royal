@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+  <link rel="stylesheet" href="tickets-kaufen.css">
+  <title>Kino Royal</title>
+</head>
+<body>
+  <div class="top-black"></div>
+  <div class="nav-bar">
+    <a href="index.html"><img src="KinoBilder/LOGO3-modified.png" alt="Kino Royal in roten Buchstaben." class="logo"></a>
+    <nav class="nav-elemente">
+      <ul>
+        <li><a href="index.html">PROGRAMM</a></li>
+        <li><a href="preview.html">PREVIEW</a></li>
+        <li><a href="special.html">SPECIAL</a></li>
+      </ul>
+    </nav>
+    <div class="konto">
+      <a href="#">KONTO</a>
+      <ul class="konto-dropdown">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="regestrierung.html">Registrieren</a></li>
+      </ul>
+    </div>
+
+    <div class="logged-in" id="logged-in" style="display:none;">
+      <span id="user-name">Logged in as </span>
+    </div>
+  </div>
+
+  <div class="ticketInfo-container">
+    <h1>Tickets</h1>
+    <form id="ticketForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="erwachsene">Erwachsene | 12€</label>
+          <input type="number" id="erwachsene" name="erwachsene" placeholder="Anzahl" min="0" value="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="studenten">Studenten | 10€</label>
+          <input type="number" id="studenten" name="studenten" placeholder="Anzahl" min="0" value="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="kinder">Kinder | 8€</label>
+          <input type="number" id="kinder" name="kinder" placeholder="Anzahl" min="0" value="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="senioren">Senioren | 8€</label>
+          <input type="number" id="senioren" name="senioren" placeholder="Anzahl" min="0" value="0">
+        </div>
+      </div>
+
+      <div class="form-group-checkbox">
+        <input type="checkbox" id="newsletter">
+        <label for="newsletter">Benachrichtigungen über kommende Filme und Angebote erhalten.</label>
+      </div>
+      <div class="form-group-checkbox">
+        <input type="checkbox" id="agb" required>
+        <label for="agb">Ich akzeptiere die Allgemeinen Geschäftsbedingungen.</label>
+      </div>
+      <button type="button" class="ticketskaufen-btn" onclick="calculateTotal()">Bestätigung</button>
+    </form>
+
+    <div id="summary" class="summary">
+      <h2>Zusammenfassung</h2>
+      <p id="total-tickets">Gesamtanzahl der Tickets: 0</p>
+      <p id="total-price">Gesamtpreis: 0€</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-teil">
+      <nav class="footer-elemente">
+        <ul>
+          <li><a href="datenschutz.html">DATENSCHUTZ</a></li>
+          <li><a href="impressum.html">IMPRESSUM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="tickets-kaufen.js"></script>
+</body>
+</html>
